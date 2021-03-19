@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Experiment1</string>
+    <string name="button">Button</string>
+    <string name="here_s_the_money">Here\'s The Money</string>
+    <string name="you_hear_about_pluto">You hear about Pluto?</string>
+    <string name="textview">TextView</string>
+</resources>

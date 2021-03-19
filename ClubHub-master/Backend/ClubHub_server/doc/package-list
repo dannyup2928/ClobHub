@@ -1,0 +1,5 @@
+backend
+backend.WebSocket
+backend.clubEnrollment
+backend.clubTable
+backend.userID

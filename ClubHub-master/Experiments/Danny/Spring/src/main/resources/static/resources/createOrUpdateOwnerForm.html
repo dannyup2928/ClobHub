@@ -1,0 +1,31 @@
+<html xmlns:th=\"http://www.thymeleaf.org\"\r\n" + 
+        		"  th:replace=\"~{fragments/layout :: layout (~{::body},'owners')}\">\r\n" + 
+        		"\r\n" + 
+        		"<body>\r\n" + 
+        		"\r\n" + 
+        		"  <h2>Owner</h2>\r\n" + 
+        		"  <form th:object=\"${owner}\" class=\"form-horizontal\" id=\"add-owner-form\" method=\"post\">\r\n" + 
+        		"    <div class=\"form-group has-feedback\">\r\n" + 
+        		"      <input\r\n" + 
+        		"        th:replace=\"~{fragments/inputField :: input ('First Name', 'firstName')}\" />\r\n" + 
+        		"      <input\r\n" + 
+        		"        th:replace=\"~{fragments/inputField :: input ('Last Name', 'lastName')}\" />\r\n" + 
+        		"      <input\r\n" + 
+        		"        th:replace=\"~{fragments/inputField :: input ('Address', 'address')}\" />\r\n" + 
+        		"      <input\r\n" + 
+        		"        th:replace=\"~{fragments/inputField :: input ('City', 'city')}\" />\r\n" + 
+        		"      <input\r\n" + 
+        		"        th:replace=\"~{fragments/inputField :: input ('Telephone', 'telephone')}\" />\r\n" + 
+        		"    </div>\r\n" + 
+        		"    <div class=\"form-group\">\r\n" + 
+        		"      <div class=\"col-sm-offset-2 col-sm-10\">\r\n" + 
+        		"        <button\r\n" + 
+        		"          th:with=\"text=${owner['new']} ? 'Add Owner' : 'Update Owner'\"\r\n" + 
+        		"          class=\"btn btn-default\" type=\"submit\" th:text=\"${text}\">Add\r\n" + 
+        		"          Owner</button>\r\n" + 
+        		"      </div>\r\n" + 
+        		"    </div>\r\n" + 
+        		"  </form>\r\n" + 
+        		"</body>\r\n" + 
+        		"</html>\r\n" + 
+        		"

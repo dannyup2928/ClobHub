@@ -1,0 +1,32 @@
+<!DOCTYPE html>\r\n" + 
+        		"\r\n" + 
+        		"<html xmlns:th=\"http://www.thymeleaf.org\" th:replace=\"~{fragments/layout :: layout (~{::body},'owners')}\">\r\n" + 
+        		"\r\n" + 
+        		"  <body>\r\n" + 
+        		"\r\n" + 
+        		"    <h2>Owners</h2>\r\n" + 
+        		"\r\n" + 
+        		"    <table id=\"vets\" class=\"table table-striped\">\r\n" + 
+        		"        <thead>\r\n" + 
+        		"        <tr>\r\n" + 
+        		"            <th style=\"width: 150px;\">Name</th>\r\n" + 
+        		"            <th style=\"width: 200px;\">Address</th>\r\n" + 
+        		"            <th>City</th>\r\n" + 
+        		"            <th style=\"width: 120px\">Telephone</th>\r\n" + 
+        		"        </tr>\r\n" + 
+        		"        </thead>\r\n" + 
+        		"        <tbody>\r\n" + 
+        		"          <tr th:each=\"owner : ${selections}\">\r\n" + 
+        		"              <td>\r\n" + 
+        		"                  <a th:href=\"@{/owners/__${owner.id}__}\" th:text=\"${owner.firstName + ' ' + owner.lastName}\"/></a>\r\n" + 
+        		"              </td>\r\n" + 
+        		"              <td th:text=\"${owner.address}\"/>\r\n" + 
+        		"              <td th:text=\"${owner.city}\"/>\r\n" + 
+        		"              <td th:text=\"${owner.telephone}\"/>\r\n" + 
+        		"          </tr>\r\n" + 
+        		"        </tbody>\r\n" + 
+        		"    </table>\r\n" + 
+        		"\r\n" + 
+        		"  </body>\r\n" + 
+        		"</html>\r\n" + 
+        		"

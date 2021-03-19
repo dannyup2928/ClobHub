@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ClubHub</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login">login</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">Password</string>
+    <string name="welcome_to_ClubHub">Welcome to ClubHub</string>
+    <string name="title_activity_login_success">LoginSuccess</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="search">Search</string>
+    <string name="go_to_homepage">Go To HomePage</string>
+    <string name="your_clubs">Your Clubs</string>
+    <string name="clubname">clubName</string>
+    <string name="clubdomain">clubDomain</string>
+    <string name="domain">Domain</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="meeting_location">Meeting Location</string>
+    <string name="clubstatus">clubStatus</string>
+</resources>
